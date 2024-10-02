@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Layout</title>
+  <style>
+    .container{
+    width: 1080px;
+    margin: auto;
+
+    }
+    .header{
+      width: inherit;
+      background-color: midnightblue;
+      height: 300px;
+    }
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+
+        li {
+            float: left;
+        }
+
+        li a {
+            text-decoration: none;
+            color: darkgray;
+            display: block;
+            padding: 14px 16px;
+        }
+
+        li a:hover {
+            background-color: #111
+        }
+
+        .active {
+            color: lightskyblue;
+        }
+    }
+    .content {
+      width: 540px;
+      background-color: indianred;
+      height: 400px;
+      float: left;
+    }
+    .footer{
+      width: inherit;
+      background-color: green;
+      height: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+    <navbar>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><input type="text" id="search" name="search" placeholder="12345" maxlength="5"></li>
+    </navbar>
+
+  <div class = "header">header</div>
+  <div class = "navbar">navbar</div>
+  <div class = "content ">content 1</div>
+  <div class = "content">content 2</div>
+  <div class = "sidebar">sidebar</div>
+  <div class = "footer">footer</div>
+</div>
+</body>
+</html>
